@@ -1,0 +1,96 @@
+/* Custom styling for the task management application */
+
+/* General styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card animations and styling */
+.task-card {
+  transition: all 0.3s ease;
+  display: none; /* Initially hidden for the jQuery fadeIn effect */
+  height: 100%;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+}
+
+.task-details-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+/* Dashboard styling */
+.dashboard h2 {
+  color: #343a40;
+  font-weight: 500;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* Form styling */
+.form-control:focus, .form-select:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Status badges */
+.badge {
+  font-size: 0.8rem;
+  padding: 0.4rem 0.6rem;
+}
+
+/* Navigation styling */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+/* Buttons styling */
+.btn {
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  transform: translateY(-2px);
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+}
+
+/* Animation classes */
+.edit-view {
+  display: none;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}

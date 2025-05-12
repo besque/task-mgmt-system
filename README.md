@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# Task Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application for managing tasks, built with React, Redux, and Node.js.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- **Frontend**:
+  - React for building the UI components
+  - Redux for state management
+  - React Router for navigation between views
+  - Bootstrap for responsive design
+  - JavaScript & jQuery for dynamic interactions
 
-### `npm start`
+- **Backend**:
+  - Node.js with Express framework
+  - MongoDB for database
+  - Mongoose ODM for data modeling
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- View all tasks in a responsive dashboard
+- Add new tasks with title, description, and status
+- View task details and update task information
+- Delete tasks
+- Smooth animations and interactive UI using jQuery
 
-### `npm test`
+## Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+task-manager-app/
+├── client/               # React frontend
+│   ├── public/           # Static files
+│   └── src/              # React source code
+│       ├── components/   # React components
+│       └── redux/        # Redux state management
+└── server/               # Node.js backend
+    ├── models/           # Mongoose models
+    └── routes/           # API routes
+```
 
-### `npm run build`
+## Setup and Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js and npm installed
+- MongoDB installed or MongoDB Atlas account
+- Git (optional)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Backend Setup
 
-### `npm run eject`
+1. Navigate to the server directory:
+   ```
+   cd server
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Create a `.env` file in the server directory with:
+   ```
+   MONGO_URI=mongodb://localhost:27017/taskmanager
+   PORT=5000
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Start the backend server:
+   ```
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Frontend Setup
 
-## Learn More
+1. Navigate to the client directory:
+   ```
+   cd client
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Start the React application:
+   ```
+   npm start
+   ```
 
-### Code Splitting
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## API Endpoints
 
-### Analyzing the Bundle Size
+- `GET /api/tasks` - Get all tasks
+- `POST /api/tasks` - Create a new task
+- `PUT /api/tasks/:id` - Update a task
+- `DELETE /api/tasks/:id` - Delete a task
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Deployment
 
-### Making a Progressive Web App
+The application is deployed using the following:
+- Frontend: [Netlify](https://www.netlify.com/)
+- Backend: [Heroku](https://www.heroku.com/)
+- Database: [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Live Demo: [https://task-manager-app-demo.netlify.app](https://task-manager-app-demo.netlify.app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Development Process
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This application was built as part of the FSUI coursework, focusing on:
+- Creating responsive UI with HTML5, CSS3, and Bootstrap
+- Implementing dynamic interactions with JavaScript and jQuery
+- Building reusable components with React
+- Managing application state with Redux
+- Implementing CRUD operations with MongoDB and Express
