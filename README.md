@@ -95,21 +95,6 @@ task-manager-app/
 - `PUT /api/tasks/:id` - Update a task
 - `DELETE /api/tasks/:id` - Delete a task
 
-## Deployment
-
-The application is deployed using the following:
-- Frontend: [Netlify](https://www.netlify.com/)
-- Backend: [Heroku](https://www.heroku.com/)
-- Database: [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-
-Live Demo: [https://task-manager-app-demo.netlify.app](https://task-manager-app-demo.netlify.app)
 
 
-## Development Process
 
-This application was built as part of the FSUI coursework, focusing on:
-- Creating responsive UI with HTML5, CSS3, and Bootstrap
-- Implementing dynamic interactions with JavaScript and jQuery
-- Building reusable components with React
-- Managing application state with Redux
-- Implementing CRUD operations with MongoDB and Express
